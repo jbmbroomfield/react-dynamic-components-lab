@@ -11,7 +11,6 @@ export default class ColorBox extends Component {
   render() {
     const props = this.props
     const opacity = props.opacity
-    console.log(opacity)
     return opacity < 0.2 ? null : (
       <div className="color-box" style={{opacity: opacity}}>
         <ColorBox opacity={opacity - 0.1} />
